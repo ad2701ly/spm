@@ -1,5 +1,5 @@
 {
-	"name": "spm",
+	"name": "spmv4",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
