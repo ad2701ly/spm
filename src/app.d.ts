@@ -9,3 +9,8 @@ declare namespace App {
 	// interface Session {}
 	// interface Stuff {}
 }
+
+interface User {
+	hp: string
+	pass: string
+}
