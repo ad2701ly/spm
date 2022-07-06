@@ -8,20 +8,10 @@ datasource db {
 }
 
 model user {
-  id          Int        @id @default(autoincrement())
-  hp          String
-  pass        String
-  nama        String
-  alamat      String
-  idKecamatan String
-  peran       user_peran @default(Reseler)
-  hapus       Boolean    @default(false)
+  id    Int     @id @default(autoincrement())
+  hp    String
+  pass  String
+  hapus Boolean @default(false)
 
   @@index([hapus], map: "i_hapus")
-}
-
-enum user_peran {
-  Reseler
-  Agen
-  Admin
 }
