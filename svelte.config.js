@@ -1,3 +1,4 @@
+import { resolve } from "path";
 import adapter from "@sveltejs/adapter-auto";
 import preprocess from "svelte-preprocess";
 
@@ -13,6 +14,13 @@ const config = {
 
   kit: {
     adapter: adapter(),
+    vite: {
+      resolve: {
+        alias: {
+          '$ts': resolve('./src/ts')
+        }
+      }
+    }
   },
 };
 
